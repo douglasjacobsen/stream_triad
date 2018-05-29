@@ -126,4 +126,9 @@ int main(int argc, char **argv) {
     printf(" Best Time per triad: %le s\n", best_time_per_triad );
     printf(" Best Read BW: %lf GB/s\n", read_data / best_time_per_triad );
     printf(" Best Write BW: %lf GB/s\n", write_data / best_time_per_triad );
+
+    _mm_free(a);
+    _mm_free(b);
+    _mm_free(c);
+
 }
